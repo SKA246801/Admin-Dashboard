@@ -8,9 +8,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className='navWrapper'>
-        <div className='navLeft'>
-          <p>SKA246801</p>
-        </div>
+        <div className='navLeft'></div>
         <div className='navRight'>
           <div className='iconContainer'>
             <NotificationsNoneIcon fontSize='large' />
