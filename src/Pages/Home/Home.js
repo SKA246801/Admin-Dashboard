@@ -6,9 +6,11 @@ import './Home.css'
 function Home() {
   return (
     <div className='home'>
-      {/* <Navbar /> */}
       <Sidebar />
-      <div className='homeContainer'>Container</div>
+      <div className='homeContainer'>
+        <Navbar />
+        Container
+      </div>
     </div>
   )
 }
