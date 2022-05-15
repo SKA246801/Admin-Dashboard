@@ -70,6 +70,7 @@ li:hover {
   border-radius: 5px;
   border: 1px solid rgb(5, 92, 75);
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .firstColor {
