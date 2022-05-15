@@ -32,7 +32,7 @@ function Widget({ type }) {
       break
     case 'earnings':
       data = {
-        title: 'earnings',
+        title: 'EARNINGS',
         isMoney: true,
         link: 'View net earnings',
         icon: <MonetizationOnOutlined className='widgetIcon' style={{ color: 'green', backgroundColor: 'rgba(0,128,0,0.2)' }} />,
