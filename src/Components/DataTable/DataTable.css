@@ -3,6 +3,26 @@
   padding: 20px;
 }
 
+.dataTableTitle {
+  width: 100%;
+  font-size: 24px;
+  color: gray;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.createUserLink {
+  text-decoration: none;
+  color: green;
+  font-size: 17px;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .cellWithImg {
   display: flex;
   align-items: center;

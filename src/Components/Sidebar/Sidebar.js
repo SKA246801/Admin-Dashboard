@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
+import { Link } from 'react-router-dom'
 
 import DashboardIcon from '@mui/icons-material/Dashboard'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
@@ -18,7 +19,9 @@ function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='top'>
-        <p>KAINE</p>
+        <Link to='/' style={{ textDecoration: 'none', color: 'rgb(5, 92, 75)' }}>
+          <p>KAINE</p>
+        </Link>
       </div>
       <hr />
       <div className='center'>
@@ -29,14 +32,18 @@ function Sidebar() {
             <span className='sidebarSubTitles'>Dashboard</span>
           </li>
           <p className='title'>LISTS</p>
-          <li>
-            <PersonOutlineIcon className='icon' />
-            <span className='sidebarSubTitles'>Users</span>
-          </li>
-          <li>
-            <StoreIcon className='icon' />
-            <span className='sidebarSubTitles'>Products</span>
-          </li>
+          <Link to='/users' style={{ textDecoration: 'none' }}>
+            <li>
+              <PersonOutlineIcon className='icon' />
+              <span className='sidebarSubTitles'>Users</span>
+            </li>
+          </Link>
+          <Link to='/products' style={{ textDecoration: 'none' }}>
+            <li>
+              <StoreIcon className='icon' />
+              <span className='sidebarSubTitles'>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className='icon' />
             <span className='sidebarSubTitles'>Orders</span>
