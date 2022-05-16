@@ -51,7 +51,7 @@ function TableComponent() {
       status: 'Approved',
     },
     {
-      id: 12345,
+      id: 54322,
       product: 'Samsung Galaxy Book Pro 360',
       img: 'galaxy-book.jpg',
       customer: 'James Smith',
