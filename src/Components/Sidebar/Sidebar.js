@@ -18,7 +18,7 @@ function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='top'>
-        <p>SKA246801</p>
+        <p>KAINE</p>
       </div>
       <hr />
       <div className='center'>
