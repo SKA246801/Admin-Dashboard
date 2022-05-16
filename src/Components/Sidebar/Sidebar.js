@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { DarkModeContext } from '../../Assets/Context/DarkModeContext'
 import './Sidebar.css'
 import { Link } from 'react-router-dom'
 
@@ -16,11 +17,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import LogoutIcon from '@mui/icons-material/Logout'
 
 function Sidebar() {
+  const { dispatch } = useContext(DarkModeContext)
+
   return (
     <div className='sidebar'>
       <div className='top'>
-        <Link to='/' style={{ textDecoration: 'none', color: 'rgb(5, 92, 75)' }}>
-          <p>KAINE</p>
+        <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+          <p className='logo'>KAINE</p>
         </Link>
       </div>
       <hr />
@@ -86,8 +89,8 @@ function Sidebar() {
         </ul>
       </div>
       <div className='bottom'>
-        <div className='colorOption fisrtColor'></div>
-        <div className='colorOption secondColor'></div>
+        <div className='colorOption firstColor' onClick={() => dispatch({ type: 'LIGHT' })}></div>
+        <div className='colorOption secondColor' onClick={() => dispatch({ type: 'DARK' })}></div>
       </div>
     </div>
   )

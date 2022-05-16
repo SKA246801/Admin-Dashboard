@@ -78,7 +78,9 @@ function TableComponent() {
         <TableBody>
           {rows.map(row => (
             <TableRow key={row.id}>
-              <TableCell>{row.id}</TableCell>
+              <TableCell className='tableCell' sx={{ minWidth: 75 }}>
+                {row.id}
+              </TableCell>
               <TableCell className='tableCell'>
                 <div className='cellWrapper'>
                   <img src={require(`../../Assets/Images/${row.img}`)} alt='' className='productImg' />

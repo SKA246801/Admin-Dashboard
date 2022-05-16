@@ -30,7 +30,7 @@ function DataTable() {
           Add New
         </Link>
       </div>
-      <DataGrid rows={rows} columns={columns.concat(actionColumn)} pageSize={10} rowsPerPageOptions={[10]} checkboxSelection />
+      <DataGrid className='dataGrid' rows={rows} columns={columns.concat(actionColumn)} pageSize={10} rowsPerPageOptions={[10]} checkboxSelection />
     </div>
   )
 }
