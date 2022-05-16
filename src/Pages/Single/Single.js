@@ -31,6 +31,10 @@ function Single() {
                   <span className='itemKey'>Address:</span>
                   <span className='itemValue'>SomeStreet SomeCity, SomeState SomeZipcode</span>
                 </div>
+                <div className='detailItem'>
+                  <span className='itemKey'>Country:</span>
+                  <span className='itemValue'>USA</span>
+                </div>
               </div>
             </div>
           </div>

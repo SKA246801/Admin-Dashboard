@@ -19,7 +19,7 @@
   padding: 3px;
 }
 
-input {
+.search > input {
   border: none;
   outline: none;
   background: transparent;
